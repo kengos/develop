@@ -1,0 +1,43 @@
+{
+  "name": "local-sandbox",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "python3.dev.local",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/opt/app",
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "oderwat.indent-rainbow",
+    "njpwerner.autodocstring",
+  ],
+  "settings": {
+    "files.eol": "\n",
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true,
+      "editor.formatOnType": false,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4,
+    },
+    "python.languageServer": "Pylance",
+    "python.pythonPath": "/opt/python/venv/bin/python",
+    "python.defaultInterpreterPath": "/opt/python/venv/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.completeFunctionParens": true,
+    "jupyter.kernels.filter": [
+      {
+        "type": "jupyterKernelspec",
+        "path": "/opt/python/venv/bin/python"
+      }
+    ]
+  }
+}

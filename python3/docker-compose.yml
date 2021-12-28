@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  python3.dev.local:
+    container_name: python3.dev.local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/opt/app:cached
+    ports:
+      - "8888:8888"
+    privileged: true
+    tty: true

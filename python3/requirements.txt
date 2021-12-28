@@ -1,0 +1,17 @@
+notebook
+jupyter
+jupyterlab
+seaborn
+numpy
+scipy
+kaggle
+matplotlib
+japanize-matplotlib
+pandas
+sklearn
+flake8
+black
+pytest
+isort
+toml
+ipykernel
