@@ -1,11 +1,11 @@
 {
-  "name": "local-sandbox",
+  "name": "local-sandbox-python3",
   "dockerComposeFile": [
     "../docker-compose.yml"
   ],
   "service": "python3.dev.local",
   "shutdownAction": "stopCompose",
-  "workspaceFolder": "/opt/app",
+  "workspaceFolder": "/home/devuser/workspace",
   "extensions": [
     "ms-python.python",
     "ms-python.vscode-pylance",
@@ -23,8 +23,6 @@
       "editor.tabSize": 4,
     },
     "python.languageServer": "Pylance",
-    "python.pythonPath": "/opt/python/venv/bin/python",
-    "python.defaultInterpreterPath": "/opt/python/venv/bin/python",
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": false,
@@ -33,11 +31,5 @@
     "python.testing.pytestEnabled": true,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.completeFunctionParens": true,
-    "jupyter.kernels.filter": [
-      {
-        "type": "jupyterKernelspec",
-        "path": "/opt/python/venv/bin/python"
-      }
-    ]
   }
 }

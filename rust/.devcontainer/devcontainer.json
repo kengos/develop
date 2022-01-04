@@ -1,0 +1,26 @@
+{
+  "name": "local-sandbox-rust1",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "rust1.dev.local",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/home/devuser/workspace",
+  "remoteUser": "devuser",
+  "extensions": [
+    "oderwat.indent-rainbow",
+    "rust-lang.rust",
+    "bungcip.better-toml"
+  ],
+  "settings": {
+    "files.eol": "\n",
+    "[rust]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true,
+      "editor.formatOnType": false,
+      "editor.insertSpaces": true,
+      "editor.tabSize": 4,
+      "editor.defaultFormatter": "rust-lang.rust"
+    }
+  }
+}
